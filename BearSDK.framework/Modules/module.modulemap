@@ -1,0 +1,24 @@
+framework module BearSDK {
+    umbrella header "BearSDK.h"
+    export *
+    
+    explicit module BearGL {
+        header "BearGLPublic.h"
+        export *
+    }
+    
+    explicit module QRCodes {
+        header "ZXingPublic.h"
+        export *
+    }
+}
+
+module CommonCrypto [system] {
+    header "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/CommonCrypto/CommonCrypto.h"
+    export *
+}
+
+module BearSDK.Swift {
+    header "BearSDK-Swift.h"
+    requires objc
+}
