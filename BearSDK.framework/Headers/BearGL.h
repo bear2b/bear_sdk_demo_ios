@@ -12,16 +12,18 @@
 #import "ConfigBridge.h"
 
 typedef NS_ENUM(NSUInteger, InitState) {
-    NotInitialized,
-    Initializing,
-    Initialized
+    InitStateNotInitialized,
+    InitStateInitializing,
+    InitStateInitialized
 };
 
 @interface BearGL: NSObject
 
 +(void)setConfigBridge:(ConfigBridge*)configBridge;
 +(void)initAR;
++(InitState)initState;
 
++(void)updateMarker:(MarkerBridge*)markerBridge;
 +(void)bindMarker:(MarkerBridge*)markerBridge;
 +(void)bindMarkerInFreezedMode:(MarkerBridge*)markerBridge;
 
@@ -33,10 +35,10 @@ typedef NS_ENUM(NSUInteger, InitState) {
 +(void)playerClosedWithAssetId:(NSInteger)assetId andTimestamp:(int64_t)timestamp;
 
 +(void)destroy;
-+(void)pause;
-+(void)resume;
 +(void)reset;
-+(InitState)state;
+
++(void)pause;
++(BOOL)resume;
 
 +(void)stopScan;
 +(void)startScan;

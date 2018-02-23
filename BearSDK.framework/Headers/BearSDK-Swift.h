@@ -281,10 +281,14 @@ SWIFT_PROTOCOL("_TtP7BearSDK19BearHandlerProtocol_")
 /// Resumes camera.
 /// warning:
 /// This function will be executed automatically on UIApplicationDidBecomeActive if camera was active when application went to background.
+/// \param animated Animates camera blur effect
+///
 - (void)resumeCameraWithAnimated:(BOOL)animated;
 /// Pauses camera.
 /// warning:
 /// This function will be executed automatically on UIApplicationWillResignActive if camera was active when application went to background.
+/// \param animated Animates camera blur effect
+///
 - (void)pauseCameraWithAnimated:(BOOL)animated;
 /// Enables flash if available.
 /// note:
@@ -380,7 +384,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BearSDK * _N
 /// returns:
 /// device id or 0 if device not registered yet.
 @property (nonatomic, readonly) NSInteger deviceId;
-/// Preloads BearSDK resources to reduce loading time of BearViewController.
+/// Preloads BearSDK resources to reduce loading time of <code>BearViewController</code>.
 /// \param bearDidLoad The closure will be executed when all resources will be loaded.
 ///
 - (void)preload:(void (^ _Nullable)(void))bearDidLoad;

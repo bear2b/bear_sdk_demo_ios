@@ -56,7 +56,7 @@ Add this to your `Cartfile` file:
 
 ```
 github "Alamofire/Alamofire" "4.6.0"
-github "ReactiveX/RxSwift" "4.1.1"
+github "ReactiveX/RxSwift" "4.1.2"
 ```
 
 ``` bash
@@ -72,8 +72,8 @@ use_frameworks!
 
 target `YourApp` do
     pod 'Alamofire', '4.6.0'
-    pod 'RxCocoa', '4.1.1'
-    pod 'RxSwift', '4.1.1'
+    pod 'RxCocoa', '4.1.2'
+    pod 'RxSwift', '4.1.2'
 end
 ```
 

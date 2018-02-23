@@ -1,6 +1,6 @@
 //
 //  BearGLPublic.h
-//  BearGLPublic
+//  BearGL
 //
 //  Copyright © 2017 BEAR SAS. All rights reserved.
 //

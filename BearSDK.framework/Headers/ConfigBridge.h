@@ -27,6 +27,7 @@
 -(ConfigBridge*)setEnableFreezeAssets:(BOOL)enable;
 -(ConfigBridge*)setDeviceId:(NSInteger)deviceId;
 -(ConfigBridge*)setDev:(BOOL)dev;
+-(ConfigBridge*)setLogEnabled:(BOOL)logEnabled;
     
 @end
 
