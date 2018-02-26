@@ -40,7 +40,11 @@ carthage bootstrap --platform iOS
 * Setup certificates.
 * Run `SampleApp` or `SampleAppObjc` scheme on your device (**running on simulator is not available with the SDK**).
 
-The sample app opens a list of examples which allows you to investigate main features of BearSDK. Referenced images to scan you can find at [Bear Go](https://go.bear2b.com)
+### Sample markers:
+
+Once you compiled and installed the application on a physical device, you can scan the markers located in the [markers](https://github.com/bear2b/bear_sdk_demo_ios/tree/master/markers) folder.
+
+These are examples to show you preview of augmented targets using [Bear Go](https://go.bear2b.com)
 
 ## How to add BearSDK to your application:
 
