@@ -43,8 +43,7 @@ typedef NS_ENUM(NSUInteger, InitState) {
 +(void)stopScan;
 +(void)startScan;
 
-+(void)setReachable;
-+(void)setUnreachable;
++(void)setReachable:(BOOL)reachable;
 
 +(bool)enableFlash;
 +(bool)disableFlash;
@@ -56,6 +55,8 @@ typedef NS_ENUM(NSUInteger, InitState) {
 +(void)touchesMoved:(NSArray<NSValue*>*)touches;
 +(void)touchesEnded:(NSArray<NSValue*>*)touches;
 +(void)doubleTapInPoint:(CGPoint)point;
+
++(void)contentReadyWithHash:(NSString*)hash error:(BOOL)error;
 
 @end
 

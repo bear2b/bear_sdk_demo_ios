@@ -16,8 +16,9 @@
 }
 
 @property (nonatomic, nonnull, strong, readonly) NSArray<NSNumber*>* recognizedMarkers;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *preloadAndDestroy;
+@property (weak, nonatomic, nullable) IBOutlet UIBarButtonItem *preloadAndDestroy;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *dismissBtn;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end
 
@@ -32,6 +33,12 @@ static NSString* reuseIdentifier = @"historyReuseId";
     
     _recognizedMarkers = [[NSUserDefaults standardUserDefaults] arrayForKey:UserDefaultKeys.recognizedMarkers];
     
+    if (_hidePreloadBtn) {
+        NSMutableArray* copyArr = [_toolbar.items mutableCopy];
+        [copyArr removeObjectAtIndex:0];
+        _toolbar.items = copyArr;
+    }
+    
     if (_recognizedMarkers.count == 0) {
         UILabel* lbl = [[UILabel alloc] init];
         lbl.text = @"Scanned markers will appear here.\nYou can scan using any of samples";
@@ -44,7 +51,9 @@ static NSString* reuseIdentifier = @"historyReuseId";
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    _preloadAndDestroy.title = [BearSDK shared].isLoaded ? destroyTitle : preloadTitle;
+    if (_preloadAndDestroy)
+        _preloadAndDestroy.title = [BearSDK shared].isLoaded ? destroyTitle : preloadTitle;
+    
     if ([self navigationController]) {
         [[self navigationController] setNavigationBarHidden:NO animated:animated];
         [_dismissBtn setEnabled:NO];
@@ -52,6 +61,8 @@ static NSString* reuseIdentifier = @"historyReuseId";
 }
 
 - (IBAction)preloadTapped {
+    if (!_preloadAndDestroy) return;
+    
     if (BearSDK.shared.isLoaded) {
         [BearSDK.shared destroy];
         _preloadAndDestroy.title = preloadTitle;

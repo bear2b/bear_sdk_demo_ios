@@ -8,7 +8,7 @@
 #ifndef BearEventsDelegate_h
 #define BearEventsDelegate_h
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol BearEventsDelegate
 
@@ -28,13 +28,14 @@
 -(void)reachabilityStatusChanged:(BOOL)reachable;
 -(void)cloudRecognitionStopped;
 -(void)errorOccuredWithTitle:(nonnull NSString*)title reason:(nonnull NSString*)reason additionalInfo:(nonnull NSString*)additionalInfo;
+-(nonnull NSString*)downloadFromURL:(nonnull NSString*)url to:(nonnull NSString*)destination;
 
 @end
 
 @protocol BearGLErrorHandler
 
 @required
--(void)presentErrorAlert:(nullable NSString*)title message:(nonnull NSString*)message;
+-(void)presentErrorAlert:(nullable NSString*)title message:(nonnull NSString*)message customAction:(UIAlertAction* _Nullable)action;
 
 @end
 

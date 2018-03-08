@@ -21,11 +21,6 @@ final class NoStoryboardViewController: BearViewController {
         view.addSubview(btn)
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        handler.cleanView()
-        super.viewDidDisappear(animated)
-    }
-    
     @objc func dismissTapped() {
         if let nav = self.navigationController {
             nav.popViewController(animated: true)

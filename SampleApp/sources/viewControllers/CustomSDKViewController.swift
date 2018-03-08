@@ -90,6 +90,12 @@ final class CustomSDKViewController: BearViewController {
             UIApplication.shared.registerForRemoteNotifications();
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? HistoryViewController {
+            vc.hidePreloadBtn = true
+        }
+    }
 }
 
 extension CustomSDKViewController: BearDelegate {

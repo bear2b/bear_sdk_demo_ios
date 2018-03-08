@@ -459,5 +459,7 @@ SWIFT_CLASS("_TtC7BearSDK18BearViewController")
 
 
 
+
+
 SWIFT_MODULE_NAMESPACE_POP
 #pragma clang diagnostic pop

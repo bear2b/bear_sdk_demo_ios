@@ -11,14 +11,20 @@ import BearSDK
 final class HistoryViewController: UIViewController {
 
     @IBOutlet weak var dismissBtn: UIBarButtonItem!
-    @IBOutlet weak var preloadAndDestroy: UIBarButtonItem!
+    @IBOutlet weak var preloadAndDestroy: UIBarButtonItem?
+    @IBOutlet weak var toolbar: UIToolbar!
     
     private static let reuseIdentifier = "historyReuseId"
     private let recognizedMarkers = UserDefaults.standard.array(forKey: UserDefaultKeys.recognizedMarkers) as? [Int] ?? []
     private let preloadTitle = "preload", destroyTitle = "destroy"
+    var hidePreloadBtn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if hidePreloadBtn {
+            toolbar.items?.removeFirst()
+        }
         
         if recognizedMarkers.count == 0 {
             let label = UILabel()
@@ -31,21 +37,22 @@ final class HistoryViewController: UIViewController {
     }
     
     @IBAction func preloadTapped() {
+        guard let preloadDestroy = preloadAndDestroy else { return }
         if BearSDK.shared.isLoaded {
             BearSDK.shared.destroy()
-            preloadAndDestroy.title = preloadTitle
+            preloadDestroy.title = preloadTitle
         } else {
             BearSDK.shared.preload {
-                self.preloadAndDestroy.title = self.destroyTitle
-                self.preloadAndDestroy.isEnabled = true
+                preloadDestroy.title = self.destroyTitle
+                preloadDestroy.isEnabled = true
             }
-            preloadAndDestroy.isEnabled = false
+            preloadDestroy.isEnabled = false
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        preloadAndDestroy.title = BearSDK.shared.isLoaded ? destroyTitle : preloadTitle
+        preloadAndDestroy?.title = BearSDK.shared.isLoaded ? destroyTitle : preloadTitle
         if let nav = navigationController {
             nav.setNavigationBarHidden(false, animated: animated)
             dismissBtn.isEnabled = false

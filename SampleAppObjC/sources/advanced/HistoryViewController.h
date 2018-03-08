@@ -9,4 +9,6 @@
 
 @interface HistoryViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
+@property (assign, nonatomic) BOOL hidePreloadBtn;
+
 @end

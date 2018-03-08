@@ -331,6 +331,7 @@
                     <connections>
                         <outlet property="dismissBtn" destination="yQz-7q-ELx" id="HaF-SL-Nfl"/>
                         <outlet property="preloadAndDestroy" destination="luz-gT-WDO" id="eiM-jv-5lz"/>
+                        <outlet property="toolbar" destination="kCs-mh-ioa" id="8qb-as-5dF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LY0-ex-wV0" userLabel="First Responder" sceneMemberID="firstResponder"/>

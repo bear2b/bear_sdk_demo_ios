@@ -17,8 +17,6 @@
 		352AB00E1FD5898200F1BED5 /* ScanAndOutSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352AB00D1FD5898200F1BED5 /* ScanAndOutSampleVC.swift */; };
 		352B33191FD9ABF80065A69A /* NoStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352B33181FD9ABF80065A69A /* NoStoryboardViewController.swift */; };
 		352C579B1D6F5A2B0075A040 /* SDKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352C579A1D6F5A2B0075A040 /* SDKDelegate.swift */; };
-		353EA6D920124A44006F6DA7 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353EA6D820124A44006F6DA7 /* BearSDK.framework */; };
-		353EA6DA20124A44006F6DA7 /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 353EA6D820124A44006F6DA7 /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3558237F1D367D450003E20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355823751D367D450003E20F /* AppDelegate.swift */; };
 		355823801D367D450003E20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355823761D367D450003E20F /* Assets.xcassets */; };
 		355823811D367D450003E20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355823771D367D450003E20F /* LaunchScreen.storyboard */; };
@@ -29,6 +27,8 @@
 		35F48B231FD69BAB008CA0E1 /* CustomSDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F48B221FD69BAB008CA0E1 /* CustomSDKViewController.swift */; };
 		35FA8C5C1FD5A16E0051F8CF /* NavigationStackSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5B1FD5A16E0051F8CF /* NavigationStackSampleVC.swift */; };
 		35FA8C5E1FD5A1890051F8CF /* NoStoryboardSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5D1FD5A1890051F8CF /* NoStoryboardSampleVC.swift */; };
+		D2CBCE8820513820005D446C /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CBCE8420513803005D446C /* BearSDK.framework */; };
+		D2CBCE8920513820005D446C /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2CBCE8420513803005D446C /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,7 +39,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				35290E431FA1DCD600C27B31 /* Alamofire.framework in Embed Frameworks */,
-				353EA6DA20124A44006F6DA7 /* BearSDK.framework in Embed Frameworks */,
+				D2CBCE8920513820005D446C /* BearSDK.framework in Embed Frameworks */,
 				35290E3B1FA1DCD600C27B31 /* RxSwift.framework in Embed Frameworks */,
 				35290E391FA1DCD600C27B31 /* RxCocoa.framework in Embed Frameworks */,
 			);
@@ -57,7 +57,6 @@
 		352AB00D1FD5898200F1BED5 /* ScanAndOutSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAndOutSampleVC.swift; sourceTree = "<group>"; };
 		352B33181FD9ABF80065A69A /* NoStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardViewController.swift; sourceTree = "<group>"; };
 		352C579A1D6F5A2B0075A040 /* SDKDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKDelegate.swift; sourceTree = "<group>"; };
-		353EA6D820124A44006F6DA7 /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BearSDK.framework; sourceTree = "<group>"; };
 		355823751D367D450003E20F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355823761D367D450003E20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		355823781D367D450003E20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,11 +66,10 @@
 		358F72BF1E840F6A0085775C /* SampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleApp.entitlements; sourceTree = "<group>"; };
 		35A2DB221FFE715E00FABBC6 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		35A5FD7E200777DC00D66111 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
-		35C77FD41E7834E2003CA87F /* config.prod.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.prod.json; sourceTree = "<group>"; };
-		35D336421FAB6CAF00C2A4C8 /* config.dev.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.dev.json; sourceTree = "<group>"; };
 		35F48B221FD69BAB008CA0E1 /* CustomSDKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSDKViewController.swift; sourceTree = "<group>"; };
 		35FA8C5B1FD5A16E0051F8CF /* NavigationStackSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackSampleVC.swift; sourceTree = "<group>"; };
 		35FA8C5D1FD5A1890051F8CF /* NoStoryboardSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardSampleVC.swift; sourceTree = "<group>"; };
+		D2CBCE8420513803005D446C /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BearSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35290E421FA1DCD600C27B31 /* Alamofire.framework in Frameworks */,
-				353EA6D920124A44006F6DA7 /* BearSDK.framework in Frameworks */,
+				D2CBCE8820513820005D446C /* BearSDK.framework in Frameworks */,
 				35290E3A1FA1DCD600C27B31 /* RxSwift.framework in Frameworks */,
 				35290E381FA1DCD600C27B31 /* RxCocoa.framework in Frameworks */,
 			);
@@ -92,7 +90,6 @@
 		3504682E1D3638240033FB9B = {
 			isa = PBXGroup;
 			children = (
-				353EA6D820124A44006F6DA7 /* BearSDK.framework */,
 				355823741D367D450003E20F /* SampleApp */,
 				350468381D3638240033FB9B /* Products */,
 				35D302951E0442ED0055CC0A /* Frameworks */,
@@ -111,8 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				358F72BF1E840F6A0085775C /* SampleApp.entitlements */,
-				35D336421FAB6CAF00C2A4C8 /* config.dev.json */,
-				35C77FD41E7834E2003CA87F /* config.prod.json */,
 				3558237D1D367D450003E20F /* Info.plist */,
 				355823761D367D450003E20F /* Assets.xcassets */,
 				355823771D367D450003E20F /* LaunchScreen.storyboard */,
@@ -175,6 +170,7 @@
 		35D302951E0442ED0055CC0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2CBCE8420513803005D446C /* BearSDK.framework */,
 				35290E371FA1DCD600C27B31 /* Alamofire.framework */,
 				35290E321FA1DCD500C27B31 /* RxCocoa.framework */,
 				35290E331FA1DCD500C27B31 /* RxSwift.framework */,
@@ -450,7 +446,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SampleApp/misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -474,7 +470,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SampleApp/misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

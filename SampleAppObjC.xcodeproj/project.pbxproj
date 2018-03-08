@@ -25,12 +25,12 @@
 		353973C21FDAB34E003BA7F2 /* SDKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 353973C11FDAB34E003BA7F2 /* SDKDelegate.m */; };
 		353973C91FDAB63B003BA7F2 /* ScanAndOutSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 353973C81FDAB63B003BA7F2 /* ScanAndOutSampleVC.m */; };
 		353973CC1FDAB71B003BA7F2 /* CustomSDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 353973CB1FDAB71B003BA7F2 /* CustomSDKViewController.m */; };
-		353EA6DC20124A51006F6DA7 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353EA6DB20124A51006F6DA7 /* BearSDK.framework */; };
-		353EA6DD20124A51006F6DA7 /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 353EA6DB20124A51006F6DA7 /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		357E3D702008D9C600B83824 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 357E3D6F2008D9C600B83824 /* Cache.m */; };
 		35A5FD7A200773D300D66111 /* HistorySampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD79200773D300D66111 /* HistorySampleVC.m */; };
 		35A5FD7D200774BC00D66111 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD7C200774BC00D66111 /* HistoryViewController.m */; };
 		35A5FD84200778C900D66111 /* UserDefaultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD83200778C900D66111 /* UserDefaultKeys.m */; };
+		D2CBCE8A2051382F005D446C /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CBCE862051380B005D446C /* BearSDK.framework */; };
+		D2CBCE8B2051382F005D446C /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2CBCE862051380B005D446C /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +41,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				35290E551FA1DCFD00C27B31 /* Alamofire.framework in Embed Frameworks */,
-				353EA6DD20124A51006F6DA7 /* BearSDK.framework in Embed Frameworks */,
+				D2CBCE8B2051382F005D446C /* BearSDK.framework in Embed Frameworks */,
 				35290E4D1FA1DCFD00C27B31 /* RxSwift.framework in Embed Frameworks */,
 				35290E4B1FA1DCFD00C27B31 /* RxCocoa.framework in Embed Frameworks */,
 			);
@@ -75,7 +75,6 @@
 		353973C81FDAB63B003BA7F2 /* ScanAndOutSampleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanAndOutSampleVC.m; sourceTree = "<group>"; };
 		353973CA1FDAB71B003BA7F2 /* CustomSDKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSDKViewController.h; sourceTree = "<group>"; };
 		353973CB1FDAB71B003BA7F2 /* CustomSDKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSDKViewController.m; sourceTree = "<group>"; };
-		353EA6DB20124A51006F6DA7 /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BearSDK.framework; sourceTree = "<group>"; };
 		357E3D6E2008D9C600B83824 /* Cache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
 		357E3D6F2008D9C600B83824 /* Cache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
 		35A5FD78200773D300D66111 /* HistorySampleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistorySampleVC.h; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		35A5FD7C200774BC00D66111 /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		35A5FD82200778C900D66111 /* UserDefaultKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultKeys.h; sourceTree = "<group>"; };
 		35A5FD83200778C900D66111 /* UserDefaultKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultKeys.m; sourceTree = "<group>"; };
+		D2CBCE862051380B005D446C /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BearSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35290E4A1FA1DCFD00C27B31 /* RxCocoa.framework in Frameworks */,
-				353EA6DC20124A51006F6DA7 /* BearSDK.framework in Frameworks */,
+				D2CBCE8A2051382F005D446C /* BearSDK.framework in Frameworks */,
 				35290E541FA1DCFD00C27B31 /* Alamofire.framework in Frameworks */,
 				35267F8F1F0547CD004800F9 /* UserNotifications.framework in Frameworks */,
 				35290E4C1FA1DCFD00C27B31 /* RxSwift.framework in Frameworks */,
@@ -105,7 +105,6 @@
 		125004C71D52240500ADD24F = {
 			isa = PBXGroup;
 			children = (
-				353EA6DB20124A51006F6DA7 /* BearSDK.framework */,
 				125004D21D52240500ADD24F /* SampleAppObjC */,
 				125004D11D52240500ADD24F /* Products */,
 				1250050C1D5224B000ADD24F /* Frameworks */,
@@ -141,6 +140,7 @@
 		1250050C1D5224B000ADD24F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2CBCE862051380B005D446C /* BearSDK.framework */,
 				35290E491FA1DCFD00C27B31 /* Alamofire.framework */,
 				35290E441FA1DCFC00C27B31 /* RxCocoa.framework */,
 				35290E451FA1DCFD00C27B31 /* RxSwift.framework */,

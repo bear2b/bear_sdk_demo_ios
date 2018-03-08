@@ -8,6 +8,7 @@
 #import "CustomSDKViewController.h"
 #import <UserNotifications/UserNotifications.h>
 #import "Cache.h"
+#import "HistoryViewController.h"
 
 #define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
@@ -112,7 +113,12 @@
              });
          }];
     }
-    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if (![[segue destinationViewController] isKindOfClass:[HistoryViewController class]]) return;
+    HistoryViewController* vc = (HistoryViewController*)[segue destinationViewController];
+    vc.hidePreloadBtn = YES;
 }
 
 -(void)presentShareWithScreenshot:(UIImage*)screenshot {
