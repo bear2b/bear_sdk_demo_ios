@@ -2,6 +2,12 @@
 
 ---
 
+## [2.0.4](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.4) Xcode 9.3 / Swift 4.1
+
+#### Updated:
+* recompiled with new XCode 9.3, Swift 4.1;
+* dependencies to latest available versions;
+
 ## [2.0.3](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.3) Xcode 9.2 / Swift 4.0.3
 
 #### Impovements:

@@ -68,8 +68,8 @@ static NSString* reuseIdentifier = @"historyReuseId";
         _preloadAndDestroy.title = preloadTitle;
     } else {
         [BearSDK.shared preload:^{
-            _preloadAndDestroy.title = destroyTitle;
-            [_preloadAndDestroy setEnabled:YES];
+            self->_preloadAndDestroy.title = self->destroyTitle;
+            [self->_preloadAndDestroy setEnabled:YES];
         }];
         [_preloadAndDestroy setEnabled:NO];
     }

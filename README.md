@@ -59,7 +59,7 @@ Example of `Cartfile` included in sample app.
 Add this to your `Cartfile` file:
 
 ```
-github "Alamofire/Alamofire" "4.6.0"
+github "Alamofire/Alamofire" "4.7.2"
 github "ReactiveX/RxSwift" "4.1.2"
 ```
 
@@ -75,7 +75,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'Alamofire', '4.6.0'
+    pod 'Alamofire', '4.7.2'
     pod 'RxCocoa', '4.1.2'
     pod 'RxSwift', '4.1.2'
 end
