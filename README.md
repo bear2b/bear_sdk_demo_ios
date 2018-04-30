@@ -29,15 +29,15 @@ Welcome to the Bear SDK. This document is designed to help you from your very fi
 ### How to run sample apps:
 The BearSDK is already integrated in the project.
 
-* Download [sample apps repository](https://github.com/bear2b/bear_sdk_demo_ios).
-* Bootstrap dependencies
+* Download [sample apps repository](https://github.com/bear2b/bear_sdk_demo_ios);
+* Bootstrap dependencies.
 
 ``` bash
 carthage bootstrap --platform iOS
 ```
 
-* Open `BearSDK.workspace` in XCode.
-* Setup certificates.
+* Open `BearSDK.workspace` in XCode;
+* Setup certificates;
 * Run `SampleApp` or `SampleAppObjc` scheme on your device (**running on simulator is not available with the SDK**).
 
 ### Sample markers:
@@ -160,7 +160,7 @@ The SDK must be configured with secret key before starting BearSDK usage.
 try? BearSDK.set(secretKey: "")
 ```
 
-You have to call the `BearSDK.set(secretKey: "")` method using a secret key as parameter. You can check the sample app and use its secret key during your development cycle. However you have to use your own secret key before submitting your application to production (this secret key will be provided by BEAR).
+You have to call the `BearSDK.set(secretKey: "")` method using a secret key as parameter. You can check the sample app and use its secret key during your development cycle. However you have to use your own secret key before submitting your application to production (this secret key will be provided by [BEAR](http://bear2b.com/en/contact)).
 
 ## Implementation
 
@@ -172,8 +172,8 @@ The `BearViewController` provides a infrastructure for your application to manag
 You are able to create instances of `BearViewController` subclasses and use those objects to provide the specific behaviors and visual appearances that you need.
 You are able to specify these scanner properties in subclass or Interface Builder:
 
-* `timeToPause` - The time after that scanner will be paused. The default value of this property is 10 seconds.
-* `scannerColor` - Customize scanning line color. The default value of this property is purple color.
+* `timeToPause` - The time after that scanner will be paused. The default value of this property is 10 seconds;
+* `scannerColor` - Customize scanning line color. The default value of this property is purple color;
 * `delegate` - Use your own `BearDelegate` implementation. Delegate provides a mechanism for your application to take action on events that occur in the `BearViewController`.
 
 To get more information about `BearDelegate` take a look on [special `BearDelegate` article](#delegate).
@@ -184,25 +184,29 @@ To get more information about `BearDelegate` take a look on [special `BearDelega
 
 The `BearHandlerProtocol` provides a mechanism for your application to handle features of `BearViewController(Objc)`.
 
-* Take screenshot of camera view, ignoring any overlapping UI elements.
-* Get the current state of the scanner.
-* Start/stop scanning.
-* Clean augmented reality view and destroy all loaded data.
-* Enable/disable and check current state of flash.
+* Take screenshot of camera view, ignoring any overlapping UI elements;
+* Get the current state of the scanner;
+* Start/stop scanning;
+* Clean augmented reality view and destroy all loaded data;
+* Enable/disable and check current state of flash;
 * Check the current network reachability status.
 
->  Note: The `BearHandlerProtocol` should not be used before `BearViewController` view will be loaded. It will not trigger crash or an unexpected behaviour, but triggered action will not have any effect. You will receive warning message in debug output.
+> Note: Network reachability status check depreacted and will be removed in the future release.
+
+The `BearHandlerProtocol` should not be used before `BearViewController` view will be loaded. It will not trigger crash or an unexpected behaviour, but triggered action will not have any effect. You will receive warning message in debug output.
 
 ## Delegate
 
 The `BearDelegate` protocol provides a mechanism for your application to take action on events that occur in the `BearViewController(Objc)`. You can make use of these calls by assigning an object to the `BearViewController` delegate property directly or connect through Interface Builder.
 
-* `recognizedMarker(withId markerId: Int, assetIds: [Int])`  - Function will be executed when marker has been recognized.
-* `markerNotRecognized` - Function will be executed when timeout is reached and no one marker is recognized.
-* `assetClicked(with assetId: Int)` - Function will be executed on click of any asset.
-* `scannerStateChanged(_ state: BearScannerState)` - Function will be executed when BearSDK Scanner has changed state.
+* `recognizedMarker(withId markerId: Int, assetIds: [Int])`  - Function will be executed when marker has been recognized;
+* `markerNotRecognized` - Function will be executed when timeout is reached and no one marker is recognized;
+* `assetClicked(with assetId: Int)` - Function will be executed on click of any asset;
+* `scannerStateChanged(_ state: BearScannerState)` - Function will be executed when BearSDK Scanner has changed state;
+* `didFail(withError error: BearError)` - Function will be executed when an error occurs while the BearSDK is loading content;
 * `reachabilityStatusChanged(_ reachable: Bool)` - Function will be executed on change of reachability status.
-* `didFail(withError error: BearError)` - Function will be executed when an error occurs while the BearSDK is loading content.
+
+> Note: `reachabilityStatusChanged(_ reachable: Bool)` depreacted and will be removed in the future release.
 
 ## Advanced
 
@@ -214,15 +218,15 @@ The BearSDK also provides a method to display a marker without scanning it: `sho
 
 The behavior is the same as when a marker is recognized from scan, but without tracking assets on the marker:
 
-* The marker and its assets will be displayed in the augmented reality view
+* The marker and its assets will be displayed in the augmented reality view;
 * The scanner status will be changed on `processing` and after that on `rendering` or `didFail(withError:)` will be called if an error occurs.
 
 ### Preload/Destroy resources
 
 To reduce loading and appearing time of `BearViewCotroller` you could preload the BearSDK resources. At the same time you may need to release the memory used by BearSDK you have to use `destroy` method.
 
-* `preload(_ bearDidLoad: (() -> Void)?)` - Preloads the BearSDK resources, `bearDidLoad`  closure will be executed when all resources will be loaded.
-* `isLoaded` - The status of the BearSDK resources.
+* `preload(_ bearDidLoad: (() -> Void)?)` - Preloads the BearSDK resources, `bearDidLoad`  closure will be executed when all resources will be loaded;
+* `isLoaded` - The status of the BearSDK resources;
 * `destroy` - Destroys all loaded BearSDK resources.
 
 > Note: once loaded Bear SDK resources will be kept until `destroy` is called.
@@ -231,7 +235,7 @@ To reduce loading and appearing time of `BearViewCotroller` you could preload th
 
 In most cases BearSDK will handle pause/resume camera automatically. But if you are need very specific behaviour, you can disable automatic camera handling and do it manually.
 
-* In `BearViewCotroller` you have to change `disableCameraAutoHandling` property to `true`.
+* In `BearViewCotroller` you have to change `disableCameraAutoHandling` property to `true`;
 * Manage manually pause/resume camera using `BearViewController` `handler` object functions `resumeCamera(animated: Bool)` and `pauseCamera(animated: Bool)`.
 
 ### Push Notifications

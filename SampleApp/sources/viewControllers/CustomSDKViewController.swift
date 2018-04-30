@@ -2,7 +2,7 @@
 //  CustomSDKViewController.swift
 //  SampleApp
 //
-//  Copyright © 2017 BEAR SAS. All rights reserved.
+//  Copyright © 2017-2018 BEAR SAS. All rights reserved.
 //
 
 import Foundation
@@ -56,7 +56,7 @@ final class CustomSDKViewController: BearViewController {
     @IBAction func enableDisableFlash() {
         if !handler.isFlashEnabled {
             flashBtn.isSelected = handler.enableFlash()
-        } else {
+        } else { 
             handler.disableFlash()
             flashBtn.isSelected = false
         }
@@ -132,10 +132,6 @@ extension CustomSDKViewController: BearDelegate {
     
     func assetClicked(with assetId: Int) {
         debugPrint("called \(#function), assetId = \(assetId)")
-    }
-    
-    func reachabilityStatusChanged(_ reachable: Bool) {
-        debugPrint("called \(#function), reachable = \(reachable)")
     }
     
     func didFail(withError error: BearError) {

@@ -194,6 +194,7 @@ enum BearScannerState : NSInteger;
 /// or connect through Interface Builder.
 SWIFT_PROTOCOL("_TtP7BearSDK12BearDelegate_")
 @protocol BearDelegate
+@optional
 /// Function will be executed when marker has been recognized.
 /// <ul>
 ///   <li>
@@ -218,6 +219,8 @@ SWIFT_PROTOCOL("_TtP7BearSDK12BearDelegate_")
 ///
 - (void)scannerStateChanged:(enum BearScannerState)state;
 /// Function will be executed on change of reachability status.
+/// warning:
+/// Function depreacted and will be removed in the future release
 /// \param reachable The reachability status
 ///
 - (void)reachabilityStatusChanged:(BOOL)reachable;
@@ -297,6 +300,8 @@ SWIFT_PROTOCOL("_TtP7BearSDK19BearHandlerProtocol_")
 /// Current flash status.
 @property (nonatomic, readonly) BOOL isFlashEnabled;
 /// Current network reachability status.
+/// warning:
+/// Function depreacted and will be removed in the future release
 @property (nonatomic, readonly) BOOL isNetworkReachable;
 /// Shows ARScene without tracking.
 /// note:
@@ -337,11 +342,11 @@ SWIFT_CLASS("_TtC7BearSDK18BearInternalHelper")
 
 /// BearSDK. Handles configuration and initialization of BearSDK.
 /// copyright:
-/// 2018 BEAR SAS
+/// 2016-2018 BEAR SAS
 /// requires:
 /// iOS 9.0 and later
 /// version:
-/// 2.0.4
+/// 2.0.5
 /// <ul>
 ///   <li>
 ///     See Also:
@@ -419,10 +424,12 @@ typedef SWIFT_ENUM(NSInteger, BearScannerState) {
 SWIFT_CLASS("_TtC7BearSDK18BearViewController")
 @interface BearViewController : UIViewController
 /// The time after that scanner will be paused in seconds.
+/// Changes will be applied after <code>viewDidLoad</code> invocation.
 /// note:
 /// The default value of this property is 10 seconds.
 @property (nonatomic) NSInteger timeToPause;
 /// Customize scanning line color.
+/// Changes will be applied after <code>viewDidLoad</code> invocation.
 /// note:
 /// The default value of this property is purple color.
 @property (nonatomic, strong) UIColor * _Nonnull scannerColor;

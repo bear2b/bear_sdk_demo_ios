@@ -27,8 +27,8 @@
 		35F48B231FD69BAB008CA0E1 /* CustomSDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F48B221FD69BAB008CA0E1 /* CustomSDKViewController.swift */; };
 		35FA8C5C1FD5A16E0051F8CF /* NavigationStackSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5B1FD5A16E0051F8CF /* NavigationStackSampleVC.swift */; };
 		35FA8C5E1FD5A1890051F8CF /* NoStoryboardSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5D1FD5A1890051F8CF /* NoStoryboardSampleVC.swift */; };
-		D251372D2084ECB300F4273D /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D251372C2084ECB300F4273D /* BearSDK.framework */; };
-		D251372E2084ECB300F4273D /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D251372C2084ECB300F4273D /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D2A71955209770CF00D33DB2 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A71954209770CF00D33DB2 /* BearSDK.framework */; };
+		D2A71956209770CF00D33DB2 /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2A71954209770CF00D33DB2 /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,7 +39,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				35290E431FA1DCD600C27B31 /* Alamofire.framework in Embed Frameworks */,
-				D251372E2084ECB300F4273D /* BearSDK.framework in Embed Frameworks */,
+				D2A71956209770CF00D33DB2 /* BearSDK.framework in Embed Frameworks */,
 				35290E3B1FA1DCD600C27B31 /* RxSwift.framework in Embed Frameworks */,
 				35290E391FA1DCD600C27B31 /* RxCocoa.framework in Embed Frameworks */,
 			);
@@ -69,7 +69,7 @@
 		35F48B221FD69BAB008CA0E1 /* CustomSDKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSDKViewController.swift; sourceTree = "<group>"; };
 		35FA8C5B1FD5A16E0051F8CF /* NavigationStackSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackSampleVC.swift; sourceTree = "<group>"; };
 		35FA8C5D1FD5A1890051F8CF /* NoStoryboardSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardSampleVC.swift; sourceTree = "<group>"; };
-		D251372C2084ECB300F4273D /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BearSDK.framework; sourceTree = "<group>"; };
+		D2A71954209770CF00D33DB2 /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BearSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35290E421FA1DCD600C27B31 /* Alamofire.framework in Frameworks */,
-				D251372D2084ECB300F4273D /* BearSDK.framework in Frameworks */,
+				D2A71955209770CF00D33DB2 /* BearSDK.framework in Frameworks */,
 				35290E3A1FA1DCD600C27B31 /* RxSwift.framework in Frameworks */,
 				35290E381FA1DCD600C27B31 /* RxCocoa.framework in Frameworks */,
 			);
@@ -170,7 +170,7 @@
 		35D302951E0442ED0055CC0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D251372C2084ECB300F4273D /* BearSDK.framework */,
+				D2A71954209770CF00D33DB2 /* BearSDK.framework */,
 				35290E371FA1DCD600C27B31 /* Alamofire.framework */,
 				35290E321FA1DCD500C27B31 /* RxCocoa.framework */,
 				35290E331FA1DCD500C27B31 /* RxSwift.framework */,

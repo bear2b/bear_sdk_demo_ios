@@ -2,7 +2,7 @@
 //  BearGL.h
 //  BearGL
 //
-//  Copyright © 2016-2018 BEAR SAS. All rights reserved.
+//  Copyright © 2016 BEAR SAS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

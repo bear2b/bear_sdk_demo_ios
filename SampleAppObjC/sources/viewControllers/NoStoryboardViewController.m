@@ -2,7 +2,7 @@
 //  NoStoryboardViewController.m
 //  SampleAppObjC
 //
-//  Copyright © 2017 BEAR SAS. All rights reserved.
+//  Copyright © 2017-2018 BEAR SAS. All rights reserved.
 //
 
 #import "NoStoryboardViewController.h"
@@ -16,6 +16,9 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.scannerColor = [UIColor greenColor];
+    self.timeToPause = 8;
     
     UIButton* close = [UIButton buttonWithType:UIButtonTypeCustom];
     [close setTitle:@"dismiss" forState:UIControlStateNormal];
@@ -49,10 +52,6 @@
 
 - (void)scannerStateChanged:(enum BearScannerState)state {
     NSLog(@"scanStateChanged");
-}
-
--(void)reachabilityStatusChanged:(BOOL)reachable {
-    NSLog(@"reachabilityStatusChanged");
 }
 
 - (void)didFailWithError:(BearError * _Nonnull)error {

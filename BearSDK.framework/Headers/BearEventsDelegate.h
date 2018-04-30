@@ -1,8 +1,8 @@
 //
-//  BearEventsDelegate.h
+//  BearGLActionsDelegate.h
 //
 //
-//  Copyright (c) 2015-2018 BEAR SAS. All rights reserved.
+//  Copyright (c) 2015 BEAR SAS. All rights reserved.
 //
 
 #ifndef BearEventsDelegate_h

@@ -2,7 +2,7 @@
 //  SDKDelegate.m
 //  SampleAppObjC
 //
-//  Copyright © 2017 BEAR SAS. All rights reserved.
+//  Copyright © 2017-2018 BEAR SAS. All rights reserved.
 //
 
 #import "SDKDelegate.h"
@@ -38,10 +38,6 @@
             NSLog(@"BearScannerStateRendering");
             break;
     }
-}
-
--(void)reachabilityStatusChanged:(BOOL)reachable {
-    NSLog(@"reachabilityStatusChanged: reachable = %d", reachable);
 }
 
 - (void)didFailWithError:(NSError * _Nonnull)error {

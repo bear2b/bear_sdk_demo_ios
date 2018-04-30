@@ -2,6 +2,15 @@
 
 ---
 
+## [2.0.5](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.5) Xcode 9.3 / Swift 4.1
+
+#### Impovements:
+* all `BearDelegate` functions are made optional;
+
+#### Deprecated:
+*  `BearHandlerProtocol` - `isNetworkReachable`;
+*  `BearDelegate` -  `reachabilityStatusChanged(_ reachable:)`;
+
 ## [2.0.4](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.4) Xcode 9.3 / Swift 4.1
 
 #### Updated:

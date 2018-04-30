@@ -2,7 +2,7 @@
 //  SDKDelegate.swift
 //  SampleApp
 //
-//  Copyright © 2016 BEAR SAS. All rights reserved.
+//  Copyright © 2016-2018 BEAR SAS. All rights reserved.
 //
 
 import Foundation
@@ -25,10 +25,6 @@ import BearSDK
     
     func assetClicked(with assetId: Int) {
         debugPrint("assetClicked with id = \(assetId)")
-    }
-    
-    func reachabilityStatusChanged(_ reachable: Bool) {
-        debugPrint("called \(#function)")
     }
     
     func didFail(withError error: BearError) {

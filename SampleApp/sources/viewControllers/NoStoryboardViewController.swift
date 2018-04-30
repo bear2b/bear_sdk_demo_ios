@@ -2,7 +2,7 @@
 //  NoStoryboardViewController.swift
 //  SampleApp
 //
-//  Copyright © 2017 BEAR SAS. All rights reserved.
+//  Copyright © 2017-2018 BEAR SAS. All rights reserved.
 //
 
 import Foundation
@@ -12,6 +12,9 @@ final class NoStoryboardViewController: BearViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scannerColor = .green
+        timeToPause = 8
         
         let btn = UIButton(type: .custom)
         btn.setTitle("dismiss", for: .normal)
@@ -49,10 +52,6 @@ extension NoStoryboardViewController: BearDelegate {
     }
     
     func didFail(withError error: BearError) {
-        debugPrint("called \(#function)")
-    }
-    
-    func reachabilityStatusChanged(_ reachable: Bool) {
         debugPrint("called \(#function)")
     }
 }

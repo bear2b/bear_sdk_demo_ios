@@ -2,7 +2,7 @@
 //  CustomSDKViewController.m
 //  SampleAppObjC
 //
-//  Copyright © 2017 BEAR SAS. All rights reserved.
+//  Copyright © 2017-2018 BEAR SAS. All rights reserved.
 //
 
 #import "CustomSDKViewController.h"
@@ -166,10 +166,6 @@
             [_startStopBtn setSelected:NO];
             break;
     }
-}
-
--(void)reachabilityStatusChanged:(BOOL)reachable {
-    NSLog(@"reachabilityStatusChanged: reachability = %d", reachable);
 }
 
 - (void)didFailWithError:(BearError* _Nonnull)error {
