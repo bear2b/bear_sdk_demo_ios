@@ -52,7 +52,7 @@ These are examples to show you preview of augmented targets using [Bear Go](http
 
 ### Bootstrap dependencies:
 
-You can download dependencies using any of your favorite dependency manager like: [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://github.com/CocoaPods/CocoaPods) or [Swift Package Manager](https://github.com/apple/swift-package-manager).
+You can download dependencies using any of your favorite dependency manager like: [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://github.com/CocoaPods/CocoaPods).
 Example of `Cartfile` included in sample app.
 
 #### [Carthage](https://github.com/Carthage/Carthage):
@@ -61,11 +61,16 @@ Add this to your `Cartfile` file:
 ```
 github "Alamofire/Alamofire" "4.7.2"
 github "ReactiveX/RxSwift" "4.1.2"
+binary "https://raw.githubusercontent.com/bear2b/specifications/master/ios/carthage/BearSDK.json"
 ```
 
 ``` bash
 carthage bootstrap --platform iOS
 ```
+
+Add BearSDK and other dependencies to your project into *Embedded Binaries* section.
+
+![Embedded Binaries](https://developer.bear2b.com/wp-content/uploads/2018/01/embeddedbinaries.png)
 
 #### [CocoaPods](https://github.com/CocoaPods/CocoaPods):
 Add this to your `Podfile` file:
@@ -75,9 +80,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'Alamofire', '4.7.2'
-    pod 'RxCocoa', '4.1.2'
-    pod 'RxSwift', '4.1.2'
+    pod 'BearSDK', :git => 'https://github.com/bear2b/specifications.git', :tag => '2.0.5'
 end
 ```
 
@@ -85,11 +88,16 @@ end
 pod install
 ```
 
-### Copy manually BearSDK framework from bear_sdk_demo_ios folder to your project folder.
+#### Manual:
 
-### Add BearSDK and other dependencies to your project into *Embedded Binaries* section.
+* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/2.0.5/BearSDK.framework.zip);
+* Add BearSDK to your project into *Embedded Binaries* section;
+* Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://github.com/CocoaPods/CocoaPods) or [Swift Package Manager](https://github.com/apple/swift-package-manager).
 
-![Embedded Binaries](https://developer.bear2b.com/wp-content/uploads/2018/01/embeddedbinaries.png)
+```
+"Alamofire/Alamofire" "4.7.2"
+"ReactiveX/RxSwift" "4.1.2"
+```
 
 ### Change the application Info.plist file:
 

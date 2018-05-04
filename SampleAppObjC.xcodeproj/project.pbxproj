@@ -29,8 +29,8 @@
 		35A5FD7A200773D300D66111 /* HistorySampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD79200773D300D66111 /* HistorySampleVC.m */; };
 		35A5FD7D200774BC00D66111 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD7C200774BC00D66111 /* HistoryViewController.m */; };
 		35A5FD84200778C900D66111 /* UserDefaultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD83200778C900D66111 /* UserDefaultKeys.m */; };
-		D2A71958209770E000D33DB2 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A71957209770E000D33DB2 /* BearSDK.framework */; };
-		D2A71959209770E000D33DB2 /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2A71957209770E000D33DB2 /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D29F9468209A1116008DA6C8 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29F9467209A1116008DA6C8 /* BearSDK.framework */; };
+		D29F9469209A1116008DA6C8 /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D29F9467209A1116008DA6C8 /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +41,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				35290E551FA1DCFD00C27B31 /* Alamofire.framework in Embed Frameworks */,
-				D2A71959209770E000D33DB2 /* BearSDK.framework in Embed Frameworks */,
+				D29F9469209A1116008DA6C8 /* BearSDK.framework in Embed Frameworks */,
 				35290E4D1FA1DCFD00C27B31 /* RxSwift.framework in Embed Frameworks */,
 				35290E4B1FA1DCFD00C27B31 /* RxCocoa.framework in Embed Frameworks */,
 			);
@@ -83,7 +83,7 @@
 		35A5FD7C200774BC00D66111 /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		35A5FD82200778C900D66111 /* UserDefaultKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultKeys.h; sourceTree = "<group>"; };
 		35A5FD83200778C900D66111 /* UserDefaultKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultKeys.m; sourceTree = "<group>"; };
-		D2A71957209770E000D33DB2 /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BearSDK.framework; sourceTree = "<group>"; };
+		D29F9467209A1116008DA6C8 /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BearSDK.framework; path = Carthage/Build/iOS/BearSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35290E4A1FA1DCFD00C27B31 /* RxCocoa.framework in Frameworks */,
-				D2A71958209770E000D33DB2 /* BearSDK.framework in Frameworks */,
+				D29F9468209A1116008DA6C8 /* BearSDK.framework in Frameworks */,
 				35290E541FA1DCFD00C27B31 /* Alamofire.framework in Frameworks */,
 				35267F8F1F0547CD004800F9 /* UserNotifications.framework in Frameworks */,
 				35290E4C1FA1DCFD00C27B31 /* RxSwift.framework in Frameworks */,
@@ -140,7 +140,7 @@
 		1250050C1D5224B000ADD24F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2A71957209770E000D33DB2 /* BearSDK.framework */,
+				D29F9467209A1116008DA6C8 /* BearSDK.framework */,
 				35290E491FA1DCFD00C27B31 /* Alamofire.framework */,
 				35290E441FA1DCFC00C27B31 /* RxCocoa.framework */,
 				35290E451FA1DCFD00C27B31 /* RxSwift.framework */,
