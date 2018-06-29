@@ -2,6 +2,11 @@
 
 ---
 
+## [2.0.7](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.7) Xcode 9.4.1 / Swift 4.1.2
+
+#### Fixes:
+* possible to choose scan line color when using preload method.
+
 ## [2.0.6](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.6) Xcode 9.4 / Swift 4.1.2
 
 #### Updated:
