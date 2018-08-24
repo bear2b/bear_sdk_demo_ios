@@ -1,4 +1,4 @@
 github "Alamofire/Alamofire" == 4.7.2
 github "ReactiveX/RxSwift" == 4.2.0
-binary "https://raw.githubusercontent.com/bear2b/specifications/master/ios/carthage/BearSDK.json" == 2.0.7
+binary "https://raw.githubusercontent.com/bear2b/specifications/master/ios/carthage/BearSDK.json" == 2.0.8
 

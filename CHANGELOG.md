@@ -2,6 +2,12 @@
 
 ---
 
+## [2.0.8](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.8) Xcode 9.4.1 / Swift 4.1.2
+
+#### Fixed:
+* bug with video which contains mp3 audio;
+* memory usage overhead with long videos;
+
 ## [2.0.7](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.7) Xcode 9.4.1 / Swift 4.1.2
 
 #### Fixes:
