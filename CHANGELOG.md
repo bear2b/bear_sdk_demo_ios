@@ -2,6 +2,11 @@
 
 ---
 
+## [2.0.10](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.10) Xcode 9.4.1 / Swift 4.1.2
+
+#### Fixed:
+* improved video streaming stability;
+
 ## [2.0.8](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.8) Xcode 9.4.1 / Swift 4.1.2
 
 #### Fixed:
