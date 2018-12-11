@@ -2,6 +2,8 @@
 
 ---
 
+**iOS 9 support will be removed in next major update**
+
 ## [2.0.11](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.0.11) Xcode 10.1 / Swift 4.2
 
 #### Updated:
