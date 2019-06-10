@@ -29,6 +29,8 @@
 		35A5FD7A200773D300D66111 /* HistorySampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD79200773D300D66111 /* HistorySampleVC.m */; };
 		35A5FD7D200774BC00D66111 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD7C200774BC00D66111 /* HistoryViewController.m */; };
 		35A5FD84200778C900D66111 /* UserDefaultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5FD83200778C900D66111 /* UserDefaultKeys.m */; };
+		D248FD7522AE8C81002D8209 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D248FD7422AE8C76002D8209 /* RxRelay.framework */; };
+		D248FD7622AE8C81002D8209 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D248FD7422AE8C76002D8209 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D29F9468209A1116008DA6C8 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29F9467209A1116008DA6C8 /* BearSDK.framework */; };
 		D29F9469209A1116008DA6C8 /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D29F9467209A1116008DA6C8 /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -44,6 +46,7 @@
 				D29F9469209A1116008DA6C8 /* BearSDK.framework in Embed Frameworks */,
 				35290E4D1FA1DCFD00C27B31 /* RxSwift.framework in Embed Frameworks */,
 				35290E4B1FA1DCFD00C27B31 /* RxCocoa.framework in Embed Frameworks */,
+				D248FD7622AE8C81002D8209 /* RxRelay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +86,7 @@
 		35A5FD7C200774BC00D66111 /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		35A5FD82200778C900D66111 /* UserDefaultKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultKeys.h; sourceTree = "<group>"; };
 		35A5FD83200778C900D66111 /* UserDefaultKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultKeys.m; sourceTree = "<group>"; };
+		D248FD7422AE8C76002D8209 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		D29F9467209A1116008DA6C8 /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BearSDK.framework; path = Carthage/Build/iOS/BearSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,7 @@
 			files = (
 				35290E4A1FA1DCFD00C27B31 /* RxCocoa.framework in Frameworks */,
 				D29F9468209A1116008DA6C8 /* BearSDK.framework in Frameworks */,
+				D248FD7522AE8C81002D8209 /* RxRelay.framework in Frameworks */,
 				35290E541FA1DCFD00C27B31 /* Alamofire.framework in Frameworks */,
 				35267F8F1F0547CD004800F9 /* UserNotifications.framework in Frameworks */,
 				35290E4C1FA1DCFD00C27B31 /* RxSwift.framework in Frameworks */,
@@ -140,9 +145,10 @@
 		1250050C1D5224B000ADD24F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D29F9467209A1116008DA6C8 /* BearSDK.framework */,
 				35290E491FA1DCFD00C27B31 /* Alamofire.framework */,
+				D29F9467209A1116008DA6C8 /* BearSDK.framework */,
 				35290E441FA1DCFC00C27B31 /* RxCocoa.framework */,
+				D248FD7422AE8C76002D8209 /* RxRelay.framework */,
 				35290E451FA1DCFD00C27B31 /* RxSwift.framework */,
 				35267F8E1F0547CD004800F9 /* UserNotifications.framework */,
 			);
@@ -242,7 +248,7 @@
 		125004C81D52240500ADD24F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "BEAR SAS";
 				TargetAttributes = {
 					125004CF1D52240500ADD24F = {
@@ -253,7 +259,7 @@
 			};
 			buildConfigurationList = 125004CB1D52240500ADD24F /* Build configuration list for PBXProject "SampleAppObjC" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -306,13 +312,14 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -362,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -416,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -465,6 +474,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				DEVELOPMENT_TEAM = 2Q2K2KDDW4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -472,6 +482,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = SampleAppObjC/misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -486,6 +497,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				DEVELOPMENT_TEAM = 2Q2K2KDDW4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -493,6 +505,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = SampleAppObjC/misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
