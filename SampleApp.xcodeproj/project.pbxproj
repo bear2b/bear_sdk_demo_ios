@@ -27,10 +27,10 @@
 		35F48B231FD69BAB008CA0E1 /* CustomSDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F48B221FD69BAB008CA0E1 /* CustomSDKViewController.swift */; };
 		35FA8C5C1FD5A16E0051F8CF /* NavigationStackSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5B1FD5A16E0051F8CF /* NavigationStackSampleVC.swift */; };
 		35FA8C5E1FD5A1890051F8CF /* NoStoryboardSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5D1FD5A1890051F8CF /* NoStoryboardSampleVC.swift */; };
-		D248FD7222AE8C40002D8209 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D248FD7122AE8C32002D8209 /* RxRelay.framework */; };
-		D248FD7322AE8C40002D8209 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D248FD7122AE8C32002D8209 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D29F946B209A1134008DA6C8 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29F946A209A1134008DA6C8 /* BearSDK.framework */; };
 		D29F946C209A1134008DA6C8 /* BearSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D29F946A209A1134008DA6C8 /* BearSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D2F7F75022A7F28C00C1E5AB /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F7F74F22A7F28700C1E5AB /* RxRelay.framework */; };
+		D2F7F75122A7F28C00C1E5AB /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2F7F74F22A7F28700C1E5AB /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 				D29F946C209A1134008DA6C8 /* BearSDK.framework in Embed Frameworks */,
 				35290E3B1FA1DCD600C27B31 /* RxSwift.framework in Embed Frameworks */,
 				35290E391FA1DCD600C27B31 /* RxCocoa.framework in Embed Frameworks */,
-				D248FD7322AE8C40002D8209 /* RxRelay.framework in Embed Frameworks */,
+				D2F7F75122A7F28C00C1E5AB /* RxRelay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,8 +72,8 @@
 		35F48B221FD69BAB008CA0E1 /* CustomSDKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSDKViewController.swift; sourceTree = "<group>"; };
 		35FA8C5B1FD5A16E0051F8CF /* NavigationStackSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackSampleVC.swift; sourceTree = "<group>"; };
 		35FA8C5D1FD5A1890051F8CF /* NoStoryboardSampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStoryboardSampleVC.swift; sourceTree = "<group>"; };
-		D248FD7122AE8C32002D8209 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		D29F946A209A1134008DA6C8 /* BearSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BearSDK.framework; path = Carthage/Build/iOS/BearSDK.framework; sourceTree = "<group>"; };
+		D2F7F74F22A7F28700C1E5AB /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F7F75022A7F28C00C1E5AB /* RxRelay.framework in Frameworks */,
 				35290E421FA1DCD600C27B31 /* Alamofire.framework in Frameworks */,
 				D29F946B209A1134008DA6C8 /* BearSDK.framework in Frameworks */,
 				35290E3A1FA1DCD600C27B31 /* RxSwift.framework in Frameworks */,
 				35290E381FA1DCD600C27B31 /* RxCocoa.framework in Frameworks */,
-				D248FD7222AE8C40002D8209 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +178,7 @@
 				35290E371FA1DCD600C27B31 /* Alamofire.framework */,
 				D29F946A209A1134008DA6C8 /* BearSDK.framework */,
 				35290E321FA1DCD500C27B31 /* RxCocoa.framework */,
-				D248FD7122AE8C32002D8209 /* RxRelay.framework */,
+				D2F7F74F22A7F28700C1E5AB /* RxRelay.framework */,
 				35290E331FA1DCD500C27B31 /* RxSwift.framework */,
 			);
 			name = Frameworks;
@@ -293,7 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "buildNumber=`/bin/date +%y.%m%d.%H%M`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\"\n";
+			shellScript = "buildNumber=`/bin/date +%y.%m%d.%H%M`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -449,7 +449,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_ENTITLEMENTS = SampleApp/misc/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -458,12 +457,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)",
 				);
-				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = SampleApp/misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bear.SDK;
 				PRODUCT_NAME = SampleApp;
 				SWIFT_VERSION = 5.0;
@@ -475,7 +473,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_ENTITLEMENTS = SampleApp/misc/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -484,12 +481,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)",
 				);
-				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = SampleApp/misc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bear.SDK;
 				PRODUCT_NAME = SampleApp;
 				PROVISIONING_PROFILE = "";

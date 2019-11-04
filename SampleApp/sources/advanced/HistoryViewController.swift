@@ -80,6 +80,7 @@ extension HistoryViewController: UITableViewDataSource {
 extension HistoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = NoStoryboardViewController()
+        vc.modalPresentationStyle = .fullScreen
         vc.handler.showARSceneWithoutTracking(withMarkerId: recognizedMarkers[indexPath.row])
         show(vc, sender: self)
     }

@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Kf+UPNKoEZxHGBOFrGPWWlzTvGgAbNcPrKiRIk1Y5f+grcVU6ugQFWtVdnOX8BCW
         MJpbd5gtO6nu1w2uC0QmsSBB/WOboowUk0NscHNdxr0=
     """
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         try! BearSDK.set(secretKey: secretKey)

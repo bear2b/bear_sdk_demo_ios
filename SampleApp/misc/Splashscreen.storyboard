@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BlF-C1-Xxe">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BlF-C1-Xxe">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,27 +12,23 @@
         <scene sceneID="2c6-hR-qsI">
             <objects>
                 <viewController storyboardIdentifier="splashScreen" id="BlF-C1-Xxe" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6uv-G2-sjV"/>
-                        <viewControllerLayoutGuide type="bottom" id="AYg-kr-7RH"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g4c-db-4I1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom splashscreen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="645-mf-x6b">
-                                <rect key="frame" x="104.5" y="323" width="165.5" height="21"/>
+                                <rect key="frame" x="105" y="323" width="165.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="645-mf-x6b" firstAttribute="centerX" secondItem="g4c-db-4I1" secondAttribute="centerX" id="OC3-pc-LQr"/>
+                            <constraint firstItem="645-mf-x6b" firstAttribute="centerX" secondItem="MGZ-W3-kDs" secondAttribute="centerX" id="OC3-pc-LQr"/>
                             <constraint firstItem="645-mf-x6b" firstAttribute="centerY" secondItem="g4c-db-4I1" secondAttribute="centerY" id="OFM-Uk-smL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JG6-Ej-gav"/>
+                        <viewLayoutGuide key="safeArea" id="MGZ-W3-kDs"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRd-Hy-3MC" userLabel="First Responder" sceneMemberID="firstResponder"/>

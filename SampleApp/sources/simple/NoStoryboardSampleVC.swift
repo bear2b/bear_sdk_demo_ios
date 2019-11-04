@@ -12,6 +12,7 @@ final class NoStoryboardSampleVC: UIViewController {
     
     @IBAction func showBearScanner() {
         let vc = NoStoryboardViewController()
+        vc.modalPresentationStyle = .fullScreen
         vc.delegate = vc
         vc.scannerColor = UIColor.black
         vc.timeToPause = 5

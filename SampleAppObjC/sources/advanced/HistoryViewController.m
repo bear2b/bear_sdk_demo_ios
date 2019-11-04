@@ -93,6 +93,7 @@ static NSString* reuseIdentifier = @"historyReuseId";
 // MARK: UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NoStoryboardViewController* vc = [[NoStoryboardViewController alloc] init];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [vc.handler showARSceneWithoutTrackingWithMarkerId:_recognizedMarkers[indexPath.row].integerValue];
     [self showViewController:vc sender:self];
 }

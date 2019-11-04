@@ -21,6 +21,7 @@
     self.timeToPause = 8;
     
     UIButton* close = [UIButton buttonWithType:UIButtonTypeCustom];
+    [close setTitleColor:[UIColor systemBlueColor] forState:UIControlStateNormal];
     [close setTitle:@"dismiss" forState:UIControlStateNormal];
     close.frame = CGRectMake(20, [UIApplication sharedApplication].statusBarFrame.size.height, 0, 0);
     [close sizeToFit];

@@ -16,6 +16,7 @@
 
 - (IBAction)showBearScanner {
     NoStoryboardViewController* vc = [[NoStoryboardViewController alloc] init];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [vc setDelegate:vc];
     [vc setScannerColor:[UIColor blackColor]];
     [vc setTimeToPause:5];
