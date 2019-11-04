@@ -80,7 +80,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'BearSDK', :podspec => 'https://raw.githubusercontent.com/bear2b/specifications/2.2.0/BearSDK.podspec'
+    pod 'BearSDK', :podspec => 'https://raw.githubusercontent.com/bear2b/specifications/2.2.1/BearSDK.podspec'
 end
 ```
 
@@ -90,7 +90,7 @@ pod install
 
 #### Manual:
 
-* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/2.2.0/BearSDK.framework.zip);
+* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/2.2.1/BearSDK.framework.zip);
 * Add BearSDK to your project into *Embedded Binaries* section;
 * Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://github.com/CocoaPods/CocoaPods) or [Swift Package Manager](https://github.com/apple/swift-package-manager).
 
