@@ -11,9 +11,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:SampleApp.xcodeproj">
+      location = "group:SampleApp/SampleApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SampleAppObjC.xcodeproj">
+      location = "group:SampleAppObjC/SampleAppObjC.xcodeproj">
    </FileRef>
 </Workspace>

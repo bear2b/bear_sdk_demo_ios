@@ -4,6 +4,14 @@
 
 **iOS 9 support will be removed in next major update**
 
+## [2.2.2](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.2.2) Xcode 11.3 / Swift 5.1.3
+
+#### Updated:
+* recompiled with new XCode 11.3, Swift 5.1.3;
+
+#### Fixed:
+* wrong viewport for landscape only orientation.
+
 ## [2.2.1](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/2.2.1) Xcode 11.2 / Swift 5.1.2
 
 #### Updated:

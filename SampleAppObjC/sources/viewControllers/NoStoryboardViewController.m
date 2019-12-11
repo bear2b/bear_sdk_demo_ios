@@ -23,7 +23,7 @@
     UIButton* close = [UIButton buttonWithType:UIButtonTypeCustom];
     [close setTitleColor:[UIColor systemBlueColor] forState:UIControlStateNormal];
     [close setTitle:@"dismiss" forState:UIControlStateNormal];
-    close.frame = CGRectMake(20, [UIApplication sharedApplication].statusBarFrame.size.height, 0, 0);
+    close.frame = CGRectMake(20, 64, 0, 0);
     [close sizeToFit];
     [close addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:close];

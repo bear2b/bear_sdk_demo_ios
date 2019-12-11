@@ -26,6 +26,8 @@ Welcome to the Bear SDK. This document is designed to help you from your very fi
 + Swift 4.0 and higher (or Objective-C)
 + A valid [iOS Development Certificate](https://developer.apple.com/programs/)
 
+> Warning: BearViewController supports portrait orientation only. In fact, you can still use it in landscape-only application, but it is not officially supported. 
+
 ### How to run sample apps:
 The BearSDK is already integrated in the project.
 
@@ -61,7 +63,7 @@ Add this to your `Cartfile` file:
 ```
 github "Alamofire/Alamofire" == 4.9.1
 github "ReactiveX/RxSwift" == 5.0.1
-binary "https://raw.githubusercontent.com/bear2b/specifications/master/ios/carthage/BearSDK.json" == 2.1.0
+binary "https://raw.githubusercontent.com/bear2b/specifications/master/ios/carthage/BearSDK.json" == 2.2.2
 ```
 
 ``` bash
@@ -80,7 +82,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'BearSDK', :podspec => 'https://raw.githubusercontent.com/bear2b/specifications/2.2.1/BearSDK.podspec'
+    pod 'BearSDK', :podspec => 'https://raw.githubusercontent.com/bear2b/specifications/2.2.2/BearSDK.podspec'
 end
 ```
 
@@ -90,7 +92,7 @@ pod install
 
 #### Manual:
 
-* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/2.2.1/BearSDK.framework.zip);
+* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/2.2.2/BearSDK.framework.zip);
 * Add BearSDK to your project into *Embedded Binaries* section;
 * Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://github.com/CocoaPods/CocoaPods) or [Swift Package Manager](https://github.com/apple/swift-package-manager).
 

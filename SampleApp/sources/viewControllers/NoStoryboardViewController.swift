@@ -21,7 +21,7 @@ final class NoStoryboardViewController: BearViewController {
         btn.setTitleColor(.systemBlue, for: .normal)
         btn.sizeToFit()
         btn.addTarget(self, action: #selector(dismissTapped), for: .touchUpInside)
-        btn.frame.origin = CGPoint(x: 20, y: UIApplication.shared.statusBarFrame.height)
+        btn.frame.origin = CGPoint(x: 20, y: 64)
         view.addSubview(btn)
     }
     
