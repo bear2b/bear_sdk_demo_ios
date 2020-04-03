@@ -15,7 +15,7 @@
 
 * recompiled with Xcode 11.4, Swift 5.2;
 
-#### Removed
+### Removed
 
 * iOS 9 support;
 * 32-bits support;
@@ -93,7 +93,7 @@
 
 * all `BearDelegate` functions are made optional;
 
-#### Deprecated
+### Deprecated
 
 * `BearHandlerProtocol` - `isNetworkReachable`;
 * `BearDelegate` -  `reachabilityStatusChanged(_ reachable:)`;
