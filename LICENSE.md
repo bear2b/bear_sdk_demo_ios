@@ -1,30 +1,31 @@
-BearSDK
+# BearSDK
+
 =============================================================
 
 This file contains certain notices of software components
 included with the BearSDK that BEAR SAS is required to provide you.
-Notwithstanding anything in the notices in this file, your use of these 
-software components together with the BearSDK is subject 
-to the terms of your license from BEAR SAS. Compliance with 
-all copyright laws and software license agreements included 
-in the notice section of this file are the responsibility of the user. 
-Except as may be granted by separate express written agreement, 
-this file provides no license to any patents, trademarks, copyrights, 
+Notwithstanding anything in the notices in this file, your use of these
+software components together with the BearSDK is subject
+to the terms of your license from BEAR SAS. Compliance with
+all copyright laws and software license agreements included
+in the notice section of this file are the responsibility of the user.
+Except as may be granted by separate express written agreement,
+this file provides no license to any patents, trademarks, copyrights,
 or other intellectual property of BEAR SAS or its affiliates.
 
 Software provided with this notice is NOT A CONTRIBUTION to any Open Source project.
 
-Copyright (c) 2013-2018 BEAR SAS
+Copyright (c) 2013-2020 BEAR SAS
 All rights reserved.
 
-# Notice
+## Notice
 
-## FreeImage
+### FreeImage
 
 FreeImage is used under the FIPL 1.0 version.
 License: FIPL 1.0 [See license text](http://freeimage.sourceforge.net/freeimage-license.txt)
 
-## ASSIMP
+### ASSIMP
 
 Assimp is released as Open Source under the terms of a 3-clause BSD license.
 [See license text](http://assimp.sourceforge.net/main_license.html)
@@ -32,27 +33,27 @@ Assimp is released as Open Source under the terms of a 3-clause BSD license.
 Copyright (c) 2006-2015 assimp team
 All rights reserved.
 
-## Boost
+### Boost
 
 Boost Software License - Version 1.0 - August 17th, 2003
 [See license text](https://www.boost.org/LICENSE_1_0.txt)
 
-## FFmpeg
+### FFmpeg
 
-FFmpeg is used under the GNU Lesser General Public License (LGPL) version 2.1 or later. 
+FFmpeg is used under the GNU Lesser General Public License (LGPL) version 2.1 or later.
 [See license text](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 
-## libzip
+### libzip
 
 libzip is released under a 3-clause BSD license:
 Copyright (C) 1999-2018 Dieter Baron and Thomas Klausner
 [See license text](https://libzip.org/license/)
 
-## RxCpp
+### RxCpp
 
 Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.
 Microsoft Open Technologies would like to thank its contributors, a list
-of whom are at http://rx.codeplex.com/wikipage?title=Contributors.
+of whom are at <http://rx.codeplex.com/wikipage?title=Contributors.>
 
 Licensed under the Apache License, Version 2.0 (the "License"); you
 may not use this file except in compliance with the License. You may
@@ -66,7 +67,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
 implied. See the License for the specific language governing permissions
 and limitations under the License.
 
-## ZXing
+### ZXing
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -80,7 +81,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-### jai-imageio
+#### jai-imageio
 
 Copyright (c) 2005 Sun Microsystems, Inc.
 Copyright © 2010-2014 University of Manchester

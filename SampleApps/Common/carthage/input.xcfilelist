@@ -1,0 +1,12 @@
+#  input.xcfilelist
+#  SampleApp
+#
+#  Copyright © 2019 BEAR SAS. All rights reserved.
+
+$(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework
+$(SRCROOT)/../Carthage/Build/iOS/BearGL.framework
+$(SRCROOT)/../Carthage/Build/iOS/BearSDK.framework
+$(SRCROOT)/../Carthage/Build/iOS/RxCocoa.framework
+$(SRCROOT)/../Carthage/Build/iOS/RxRelay.framework
+$(SRCROOT)/../Carthage/Build/iOS/RxSwift.framework
+$(SRCROOT)/../Carthage/Build/iOS/Vuforia.framework
