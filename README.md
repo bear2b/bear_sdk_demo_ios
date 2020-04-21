@@ -76,7 +76,7 @@ Add this to your `Cartfile` file:
 ```bash
 github "Alamofire/Alamofire" == 5.0.5
 github "ReactiveX/RxSwift" == 5.1.1
-binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.0
+binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.0.1
 ```
 
 ``` bash
@@ -92,7 +92,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'BearSDK', '3.0'
+    pod 'BearSDK', '3.0.1'
 end
 ```
 
@@ -102,7 +102,7 @@ pod install
 
 ### Manual
 
-* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/3.0/BearSDK.framework.zip);
+* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/3.0.1/BearSDK.framework.zip);
 * Add to *Frameworks, Libraries, and Embedded Content* section in your project `BearGL.framework` and `Vuforia.framework` together with `BearSDK.framework`.
 * Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org) or [Swift Package Manager](https://github.com/apple/swift-package-manager) or manually.
 
@@ -178,10 +178,10 @@ If you want to support `http` at your own risk - you are able to specify `NSAllo
 The SDK must be configured with secret key before starting BearSDK usage.
 
 ``` swift
-try BearSDK.set(secretKey: "")
+try BearSDK.setSecretKey("key")
 ```
 
-You have to call the `BearSDK.set(secretKey: "")` method using a secret key as parameter. You can check the sample app and use its secret key during your development cycle. However you have to use your own secret key before submitting your application to production (this secret key will be provided by [ARGO](https://support.ar-go.co/hc/en-us/requests/new)).
+You have to call the `BearSDK.setSecretKey("key")` method using a secret key as parameter. You can check the sample app and use its secret key during your development cycle. However you have to use your own secret key before submitting your application to production (this secret key will be provided by [ARGO](https://support.ar-go.co/hc/en-us/requests/new)).
 
 ## Implementation
 

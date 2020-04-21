@@ -2,6 +2,12 @@
 
 ---
 
+## [3.0.1](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.0.1) Xcode 11.4 / Swift 5.2
+
+### Fixed
+
+* threading issue (cocoapods only), #4;
+
 ## [3.0](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.0) Xcode 11.4 / Swift 5.2
 
 ### Added
