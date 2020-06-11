@@ -74,9 +74,9 @@ Example of `Cartfile` included in sample app.
 Add this to your `Cartfile` file:
 
 ```bash
-github "Alamofire/Alamofire" == 5.0.5
+github "Alamofire/Alamofire" == 5.2.1
 github "ReactiveX/RxSwift" == 5.1.1
-binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.0.1
+binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.0.3
 ```
 
 ``` bash
@@ -92,7 +92,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'BearSDK', '3.0.1'
+    pod 'BearSDK', '3.0.3'
 end
 ```
 
@@ -107,7 +107,7 @@ pod install
 * Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org) or [Swift Package Manager](https://github.com/apple/swift-package-manager) or manually.
 
 ```bash
-"Alamofire/Alamofire" == 5.0.5
+"Alamofire/Alamofire" == 5.2.1
 "ReactiveX/RxSwift" == 5.1.1
 ```
 

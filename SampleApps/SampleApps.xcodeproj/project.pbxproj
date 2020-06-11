@@ -42,13 +42,13 @@
 		D2159300240E7413006E2E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21592C0240D77FB006E2E05 /* LaunchScreen.storyboard */; };
 		D2159301240E7416006E2E05 /* Splashscreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352AB00B1FD586AB00F1BED5 /* Splashscreen.storyboard */; };
 		D2159302240E741D006E2E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355823761D367D450003E20F /* Assets.xcassets */; };
-		D2555A3D24376D4600295AD4 /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
-		D2555A3F24376D4600295AD4 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
-		D2555A4224376D5100295AD4 /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
-		D2555A4424376D5100295AD4 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
 		D27B633F240EA93800A3CC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27B633E240EA93800A3CC1F /* Main.storyboard */; };
 		D27B6341240EA98B00A3CC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27B6340240EA98B00A3CC1F /* Main.storyboard */; };
 		D2F7F75022A7F28C00C1E5AB /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F7F74F22A7F28700C1E5AB /* RxRelay.framework */; };
+		E73424AE249295DE0039B548 /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
+		E73424B0249295DE0039B548 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
+		E73424B3249296170039B548 /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
+		E73424B5249296170039B548 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,10 +112,10 @@
 			files = (
 				D2F7F75022A7F28C00C1E5AB /* RxRelay.framework in Frameworks */,
 				35290E421FA1DCD600C27B31 /* Alamofire.framework in Frameworks */,
-				D2555A3D24376D4600295AD4 /* BearGL.framework in Frameworks */,
+				E73424AE249295DE0039B548 /* BearGL.framework in Frameworks */,
 				35290E3A1FA1DCD600C27B31 /* RxSwift.framework in Frameworks */,
 				35290E381FA1DCD600C27B31 /* RxCocoa.framework in Frameworks */,
-				D2555A3F24376D4600295AD4 /* BearSDK.framework in Frameworks */,
+				E73424B0249295DE0039B548 /* BearSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +125,10 @@
 			files = (
 				D21592F7240E73F3006E2E05 /* RxCocoa.framework in Frameworks */,
 				D21592F1240E73F3006E2E05 /* Alamofire.framework in Frameworks */,
-				D2555A4224376D5100295AD4 /* BearGL.framework in Frameworks */,
+				E73424B3249296170039B548 /* BearGL.framework in Frameworks */,
 				D21592FB240E73F3006E2E05 /* RxSwift.framework in Frameworks */,
 				D21592F9240E73F3006E2E05 /* RxRelay.framework in Frameworks */,
-				D2555A4424376D5100295AD4 /* BearSDK.framework in Frameworks */,
+				E73424B5249296170039B548 /* BearSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +269,8 @@
 		D21592BF240D7685006E2E05 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3558237D1D367D450003E20F /* Info.plist */,
 				358F72BF1E840F6A0085775C /* SampleApp.entitlements */,
+				3558237D1D367D450003E20F /* Info.plist */,
 				D21592C0240D77FB006E2E05 /* LaunchScreen.storyboard */,
 				352AB00B1FD586AB00F1BED5 /* Splashscreen.storyboard */,
 				355823761D367D450003E20F /* Assets.xcassets */,
@@ -561,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -612,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

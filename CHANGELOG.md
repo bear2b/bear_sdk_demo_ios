@@ -2,6 +2,12 @@
 
 ---
 
+## [3.0.3](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.0.3) Xcode 11.5 / Swift 5.2.4
+
+### Fixed
+
+* fatal error in SystemApp fetching if framework is build for debug, #6;
+
 ## [3.0.1](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.0.1) Xcode 11.4 / Swift 5.2
 
 ### Fixed
