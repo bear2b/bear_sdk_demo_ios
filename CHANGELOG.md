@@ -6,7 +6,7 @@
 
 ### Changed
 
-* recompiled with Xcode 12.4, Swift 5.3.2;
+* recompiled with Xcode 12.4, Swift 5.3.2 [#9](https://github.com/bear2b/bear_sdk_demo_ios/issues/9);
 
 ### Fixed
 
