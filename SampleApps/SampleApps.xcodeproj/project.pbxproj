@@ -22,6 +22,10 @@
 		35F48B231FD69BAB008CA0E1 /* CustomSDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F48B221FD69BAB008CA0E1 /* CustomSDKViewController.swift */; };
 		35FA8C5C1FD5A16E0051F8CF /* NavigationStackSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5B1FD5A16E0051F8CF /* NavigationStackSampleVC.swift */; };
 		35FA8C5E1FD5A1890051F8CF /* NoStoryboardSampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FA8C5D1FD5A1890051F8CF /* NoStoryboardSampleVC.swift */; };
+		4A199C0C25EE1E4000C285FA /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
+		4A199C0E25EE1E4100C285FA /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
+		4A199C1325EE1E7500C285FA /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
+		4A199C1525EE1E7500C285FA /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
 		D21592C1240D77FB006E2E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21592C0240D77FB006E2E05 /* LaunchScreen.storyboard */; };
 		D21592E5240E73BC006E2E05 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21592A3240D7657006E2E05 /* HistoryViewController.m */; };
 		D21592E6240E73BC006E2E05 /* HistorySampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D21592A4240D7657006E2E05 /* HistorySampleVC.m */; };
@@ -45,10 +49,6 @@
 		D27B633F240EA93800A3CC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27B633E240EA93800A3CC1F /* Main.storyboard */; };
 		D27B6341240EA98B00A3CC1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27B6340240EA98B00A3CC1F /* Main.storyboard */; };
 		D2F7F75022A7F28C00C1E5AB /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F7F74F22A7F28700C1E5AB /* RxRelay.framework */; };
-		E73424AE249295DE0039B548 /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
-		E73424B0249295DE0039B548 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
-		E73424B3249296170039B548 /* BearGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13123ED75590029FC39 /* BearGL.framework */; };
-		E73424B5249296170039B548 /* BearSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D230F13023ED75590029FC39 /* BearSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,10 +112,10 @@
 			files = (
 				D2F7F75022A7F28C00C1E5AB /* RxRelay.framework in Frameworks */,
 				35290E421FA1DCD600C27B31 /* Alamofire.framework in Frameworks */,
-				E73424AE249295DE0039B548 /* BearGL.framework in Frameworks */,
+				4A199C0C25EE1E4000C285FA /* BearGL.framework in Frameworks */,
 				35290E3A1FA1DCD600C27B31 /* RxSwift.framework in Frameworks */,
 				35290E381FA1DCD600C27B31 /* RxCocoa.framework in Frameworks */,
-				E73424B0249295DE0039B548 /* BearSDK.framework in Frameworks */,
+				4A199C0E25EE1E4100C285FA /* BearSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,10 +125,10 @@
 			files = (
 				D21592F7240E73F3006E2E05 /* RxCocoa.framework in Frameworks */,
 				D21592F1240E73F3006E2E05 /* Alamofire.framework in Frameworks */,
-				E73424B3249296170039B548 /* BearGL.framework in Frameworks */,
+				4A199C1325EE1E7500C285FA /* BearGL.framework in Frameworks */,
 				D21592FB240E73F3006E2E05 /* RxSwift.framework in Frameworks */,
 				D21592F9240E73F3006E2E05 /* RxRelay.framework in Frameworks */,
-				E73424B5249296170039B548 /* BearSDK.framework in Frameworks */,
+				4A199C1525EE1E7500C285FA /* BearSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,12 +631,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WV5AHNLAWL;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Common/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,12 +661,13 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WV5AHNLAWL;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Common/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,10 +697,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WV5AHNLAWL;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Common/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,10 +731,11 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WV5AHNLAWL;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Common/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

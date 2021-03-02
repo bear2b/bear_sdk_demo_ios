@@ -2,6 +2,16 @@
 
 ---
 
+## [3.0.8](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.0.8) Xcode 12.4 / Swift 5.3.2
+
+### Changed
+
+* recompiled with Xcode 12.4, Swift 5.3.2;
+
+### Fixed
+
+* carthage issue for Xcode 12
+
 ## [3.0.5](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.0.5) Xcode 11.6 / Swift 5.2.4
 
 ### Added
