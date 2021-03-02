@@ -49,7 +49,7 @@ The BearSDK is already integrated in the project.
 * Bootstrap dependencies.
 
 ``` bash
-carthage bootstrap --platform iOS
+./carthage.sh bootstrap --platform iOS
 ```
 
 * Open `BearSDK.workspace` in Xcode;
@@ -74,13 +74,13 @@ Example of `Cartfile` included in sample app.
 Add this to your `Cartfile` file:
 
 ```bash
-github "Alamofire/Alamofire" == 5.2.2
-github "ReactiveX/RxSwift" == 5.1.1
-binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.0.5
+github "Alamofire/Alamofire" == 5.4.1
+github "ReactiveX/RxSwift" == 5.1.2
+binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.0.8
 ```
 
 ``` bash
-carthage bootstrap --platform iOS
+./carthage.sh bootstrap --platform iOS
 ```
 
 ### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
@@ -88,11 +88,11 @@ carthage bootstrap --platform iOS
 Add this to your `Podfile` file:
 
 ``` ruby
-platform :ios, '11.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'BearSDK', '3.0.5'
+    pod 'BearSDK', '3.0.8'
 end
 ```
 
@@ -107,14 +107,20 @@ pod install
 * Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org) or [Swift Package Manager](https://github.com/apple/swift-package-manager) or manually.
 
 ```bash
-"Alamofire/Alamofire" == 5.2.2
-"ReactiveX/RxSwift" == 5.1.1
+"Alamofire/Alamofire" == 5.4.1
+"ReactiveX/RxSwift" == 5.1.2
 ```
 
 ### Disable bitcode in *Build Settings*
 
 ``` xml
 ENABLE_BITCODE = NO;
+```
+
+### Add Excluded Architectures *Build Settings*
+
+``` xml
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64;
 ```
 
 ### Setup valid architectures
