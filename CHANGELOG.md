@@ -2,6 +2,16 @@
 
 ---
 
+## [3.2](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.2) Xcode 12.5 / Swift 5.4
+
+### Addedd
+
+* disable using IDFA by default and add ability to re-enable it in config;
+
+### Changed
+
+* recompiled with Xcode 12.5, Swift 5.4;
+
 ## [3.0.8](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.0.8) Xcode 12.4 / Swift 5.3.2
 
 ### Changed
