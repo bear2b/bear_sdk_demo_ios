@@ -2,6 +2,13 @@
 
 ---
 
+## [3.2.1](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.2.1) Xcode 12.5 / Swift 5.4
+
+### Fixed
+
+* media player from marker wasn't playing sometimes;
+* GLView wasn't adapting its frame to parent changes;
+
 ## [3.2](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.2) Xcode 12.5 / Swift 5.4
 
 ### Added
