@@ -74,9 +74,9 @@ Example of `Cartfile` included in sample app.
 Add this to your `Cartfile` file:
 
 ```bash
-github "Alamofire/Alamofire" == 5.4.3
-github "ReactiveX/RxSwift" == 5.1.2
-binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.2.1
+github "Alamofire/Alamofire" == 5.4.4
+github "ReactiveX/RxSwift" == 5.1.3
+binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.3
 ```
 
 ``` bash
@@ -92,7 +92,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'BearSDK', '3.2.1'
+    pod 'BearSDK', '3.3'
 end
 ```
 
@@ -102,13 +102,13 @@ pod install
 
 ### Manual
 
-* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/3.2.1/BearSDK.framework.zip);
+* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/3.3/BearSDK.framework.zip);
 * Add to *Frameworks, Libraries, and Embedded Content* section in your project `BearGL.framework` and `Vuforia.framework` together with `BearSDK.framework`.
 * Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org) or [Swift Package Manager](https://github.com/apple/swift-package-manager) or manually.
 
 ```bash
-"Alamofire/Alamofire" == 5.4.1
-"ReactiveX/RxSwift" == 5.1.2
+"Alamofire/Alamofire" == 5.4.4
+"ReactiveX/RxSwift" == 5.1.3
 ```
 
 ### Disable bitcode in *Build Settings*

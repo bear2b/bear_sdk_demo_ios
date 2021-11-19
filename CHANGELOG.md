@@ -2,6 +2,17 @@
 
 ---
 
+## [3.3](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.3) Xcode 13.1 / Swift 5.5.1
+
+### Changed
+
+* recompiled with Xcode 13.1, Swift 5.5.1;
+
+### Dependencies
+
+* Alamofire 5.4.3 -> 5.4.4;
+* RxSwift 5.1.2 -> 5.1.3;
+
 ## [3.2.1](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.2.1) Xcode 12.5 / Swift 5.4
 
 ### Fixed
