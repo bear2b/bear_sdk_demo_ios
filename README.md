@@ -76,7 +76,7 @@ Add this to your `Cartfile` file:
 ```bash
 github "Alamofire/Alamofire" == 5.4.4
 github "ReactiveX/RxSwift" == 5.1.3
-binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.3
+binary "https://s3.eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/BearSDK.json" == 3.3.1
 ```
 
 ``` bash
@@ -92,7 +92,7 @@ platform :ios, '12.0'
 use_frameworks!
 
 target `YourApp` do
-    pod 'BearSDK', '3.3'
+    pod 'BearSDK', '3.3.1'
 end
 ```
 
@@ -102,7 +102,7 @@ pod install
 
 ### Manual
 
-* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/3.3/BearSDK.framework.zip);
+* Download [zip archive](https://s3-eu-west-1.amazonaws.com/mobile-dev.bear2b.com/bearsdk-ios/3.3.1/BearSDK.framework.zip);
 * Add to *Frameworks, Libraries, and Embedded Content* section in your project `BearGL.framework` and `Vuforia.framework` together with `BearSDK.framework`.
 * Integrate dependencies as you wish - [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org) or [Swift Package Manager](https://github.com/apple/swift-package-manager) or manually.
 
@@ -204,7 +204,7 @@ the specific behavior and visual appearance you need.
 * `handler` - The object conforms to `ARHandlerProtocol` to control Bear scanner features;
 * `delegate` - Use your own `ARDelegate` implementation. Delegate provides a mechanism for your application to take action on events that occur in the `ARViewController`.
 
-To get more information about `ARDelegate` or `ARHandlerProtocol` take a look on [special `ARDelegate` article](#delegate) or [special `ARHandlerProtocol` article](#ARHandlerProtocol).
+To get more information about `ARDelegate` or `ARHandlerProtocol` take a look on [special `ARDelegate` article](#delegate) or [special `ARHandlerProtocol` article](#arhandlerprotocol).
 
 > Note: You can create multiple instances of `ARViewController` or its subclasses, but you can 't show them simultaneously. And keep in mind that each instance of `ARViewController` or its subclass uses the same view for rendering. Be careful with the view states.
 
@@ -228,7 +228,7 @@ The `ARDelegate` protocol provides a mechanism for your application to take acti
 * `recognitionTimeoutReached` - Function will be executed when timeout is reached and no one marker is recognized;
 * `assetClicked(with assetId: Int)` - Function will be executed on click of any asset;
 * `viewStateChanged(_ state: ARViewState)` - Function will be executed when BearSDK Scanner has changed state;
-* `didFail(withError error: BearError)` - Function will be executed when an error occurs while the BearSDK is loading content;
+* `didFail(withError error: BearError)` - Function will be executed when an error occurs while the BearSDK is loading content.
 
 ## Advanced
 

@@ -2,6 +2,12 @@
 
 ---
 
+## [3.3.1](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.3.1) Xcode 13.1 / Swift 5.5.1
+
+### Added
+
+* ability to activate OCR;
+
 ## [3.3](https://github.com/bear2b/bear_sdk_demo_ios/releases/tag/3.3) Xcode 13.1 / Swift 5.5.1
 
 ### Changed
